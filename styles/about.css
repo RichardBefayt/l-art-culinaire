@@ -1,0 +1,43 @@
+.about {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 80vh;
+    padding: 0 2rem;
+    color: var(--white);
+    background: url(../assets/images/fde/about-1.png) center/cover no-repeat;
+    box-shadow: 0 0 5px 5px rgba(109, 109, 109, 0.2);
+}
+
+.about .heading {
+    font-size: clamp(1.5rem, 3.5rem, 4.5rem);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 1.5rem;
+    background-color: var(--light-bg);
+    backdrop-filter: blur(.5rem);
+    border-radius: 0.5rem;
+}
+
+.about .about-container p {
+    margin-bottom: 1.3rem;
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+}
+
+
+@media only screen and (max-width: 1064px) {
+    .about .container {
+        margin-bottom: 30px;
+    }
+}
