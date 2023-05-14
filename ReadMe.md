@@ -1,11 +1,12 @@
-Bienvenue Chez Bs Pizza !
+Découvrez "L'Art Culinaire", un restaurant où la cuisine française rencontre l'innovation culinaire, offrant une expérience gastronomique unique alliant créativité et tradition dans une ambiance élégante.
 
-Vous découvrirez les meilleures pizzas de la région, comment nous contacter et où nous trouver.
-
-A bientôt 🍕
+Bonne visite !
 
 ----------------------------------------------------------------
 
-Projet réalisé pour le compte de Bs Pizza.
+Projet fictif.
 
-Bonne visite.
+Techos :
+- HTML
+- CSS
+- JavaScript
