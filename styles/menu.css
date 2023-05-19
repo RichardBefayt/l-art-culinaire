@@ -8,17 +8,8 @@
     min-height: 80vh;
     padding: 0 2rem;
     color: var(--black);
-    background: url(../assets/images/fde/menu-1.png) center/cover no-repeat;
-    filter: brightness(1.2);
+    background: url(../assets/images/fde/menu.png) center/cover no-repeat;
     box-shadow: 0 0 5px 5px rgba(105, 105, 105, 0.2);
-}
-
-.menu .menu-img-container {
-    position: absolute;
-    min-width: 100vw;
-    min-height: 80vh;
-    
-    z-index: -1;
 }
 
 .menu h1 {
@@ -47,7 +38,10 @@
     position: relative;
     width: 70%;
     height: 500px;
-    /* border: 1px solid black; */
+    min-height: auto;
+    background-color: #d8d7d836;
+    backdrop-filter: blur(.5rem);
+    border-radius: .5rem;
 }
 
 .menu-category {
@@ -98,7 +92,11 @@
     width: 80%;
 }
 
-.menu-category .details-container {
+/* .menu-category .details .details-text p {
+  font-size: clamp(0.5rem, 2vh, 2rem);
+} */
+
+.menu-category-container .menu-category .details-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -125,23 +123,29 @@
     text-decoration-line: underline;
 }
 
+.menu-category .menu-drinks .details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu-category .details-container .wines .details-text {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 90%;
 }
 
 .menu-category .details-container .cocktails .details-text {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    width: 80%;
+    width: 90%;
 }
 
 @keyframes slideIn {
     from {
-        transform: translateX(80vw);
+        transform: translateX(90vw);
     }
     to {
         transform: translateX(0);
@@ -153,6 +157,83 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(-80vw);
+        transform: translateX(-90vw);
     }
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    padding: 0 1rem;
+    background-attachment: fixed;
+  }
+
+  .menu nav {
+    width: 90%;
+  }
+
+  .menu-category-container {
+    width: 100%;
+  }
+
+  .menu-category-container .details {
+    width: 100%;
+  }
+
+  .menu-category .details-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* font-size: 1.5rem; */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    flex: content;
+    padding: 0;
+    background: none;
+  }
+
+  .menu nav {
+    width: 100%;
+  }
+
+  .menu-category-container {
+    width: 100%;
+    height: auto;
+  }
+  
+  .menu-category-container .details {
+    width: 90%;
+  }
+
+  .menu-category .details .details-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* font-size: 1.3rem; */
+  }
+
+  .menu-drinks {
+    width: 100%;
+    /* font-size: 1rem; */
+  }
+
+  .menu-drinks .details-container {
+    flex-wrap: wrap;
+  }
+
+  .wines .h3,
+  .cocktails .h3 {
+    width: 100%;
+    /* font-size: 0.9rem; */
+  }
+
+  .wines .details-text,
+  .cocktails .details-text {
+    width: 100%;
+    margin: 0; 
+  }
 }
