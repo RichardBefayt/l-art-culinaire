@@ -1,4 +1,9 @@
 [[redirects]]
-  from = "/"
-  to = "/html/home.html"
-  status = 200
+    from = "/"
+    to = "/html/home.html"
+    status = 200
+
+
+    from = "/about.html"
+    to = "/html/about.html"
+    status = 200
