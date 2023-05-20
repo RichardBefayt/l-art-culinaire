@@ -1,3 +1,4 @@
+// Animation du menu
 const starters = document.querySelector('.starters');
 const dishes = document.querySelector('.dishes');
 const desserts = document.querySelector('.desserts');

@@ -189,9 +189,6 @@ footer {
 
 /* Media Queries  */
 @media all and (max-width: 992px) {
-    .global-container {
-        
-    }
 
     /* Menu Burger */
     header .navbar .toggle {
