@@ -7,3 +7,13 @@
     from = "/about.html"
     to = "/html/about.html"
     status = 200
+
+[[redirects]]
+    from = "/menu.html"
+    to = "/html/menu.html"
+    status = 200
+
+[[redirects]]
+    from = "/booking.html"
+    to = "/html/booking.html"
+    status = 200
