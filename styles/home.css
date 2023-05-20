@@ -10,7 +10,7 @@
     --light-bg:rgba(0, 0, 0, 0.185);
     --light-color: #666;
     --border: .1rem solid var(--light-color);
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.6);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.753);
 }
 
 * {
