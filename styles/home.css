@@ -141,7 +141,7 @@ header .navbar .toggle {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 390px;
+    bottom: 350px;
 }
 
 .smoke,
