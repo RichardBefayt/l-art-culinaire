@@ -371,6 +371,14 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .home {
+        min-height: 70vh;
+    }
+
+    .smoke-wrap {
+        bottom: 280px;
+    }
+
     .home .home-left {
         top: 40px;
         left: 0;
