@@ -79,6 +79,13 @@
     border: 2px solid var(--white);
 }
 
+.error {
+    display: block;
+    display: none;
+    margin-top: 8px;
+    color: red;
+}
+
 /* Modale */
 .booking-modal {
     display: none;
