@@ -13,11 +13,11 @@
 .booking-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     min-width: 300px;
     width: 80%;
     max-width: 700px;
-    height: 50rem;
+    height: auto;
     padding: 25px;
     gap: 0;
     color: var(--black);
@@ -35,10 +35,12 @@
 }
 
 .booking-container .booking-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
+    flex: 1;
+}
+
+.booking-container .booking-left .contact {
+    margin-top: 10%;
+    word-wrap: break-word;
 }
 
 .booking-container .booking-left .contact h3 span {
@@ -59,6 +61,12 @@
     width: 80%;
 }
 
+.booking-container .booking-right .form-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+}
+
 .booking-container .booking-right form > * {
     width: 100%;
 }
@@ -68,6 +76,8 @@
 }
 
 .booking-container .booking-right .booking-button {
+    width: 100%;
+    margin: 0;
     color: var(--white);
     background-color: var(--black);
     border: 2px solid var(--black);
@@ -82,8 +92,9 @@
 .error {
     display: block;
     display: none;
-    margin-top: 8px;
+    margin: 5px 0 10px;
     color: red;
+    font-size: 1.3rem;
 }
 
 /* Modale */
@@ -125,7 +136,6 @@
     text-decoration: none;
     cursor: pointer;
 }
-
 
 @media only screen and (max-width: 469px) {
     .booking-container {

@@ -42,37 +42,40 @@
             <div class="booking-container">
 
                 <div class="booking-left">
-                    <div class="contact">
-                        <h3><span><i class="fas fa-phone"></i></span>Téléphone</h3>
-                        <p>01 02 03 04 05</p>
-                    </div>
-        
-                    <div class="contact">
-                        <h3><span><i class="fas fa-envelope"></i></span>Email</h3>
-                        <p>contact@lartculinaire.fr</p>
-                    </div>
-
-                    <div class="contact">
-                        <h3><span><i class="fas fa-map-marker-alt"></i></span>Adresse</h3>
-                        <p>42 rue de La Saveur</p>
-                        <p>75000 Paris</p>
-                    </div>
-                    
-                    <div class="contact">
-                        <h3><span><i class="fas fa-clock"></i></span>Horaires</h3>
-                        <p>Du lundi au vendredi : 
-                        <br>
-                        Midi : 11h - 14h
-                        <br>
-                        Soir : 19h - 22h
-                        </p>
-                        <br>
-                        <p>Le week-end :
-                        <br>
-                        Midi : 11h - 14h
-                        <br>
-                        Soir : 18h - 23h
-                        </p>
+                    <h3>Informations</h3>
+                    <div class="contact-container">
+                        <div class="contact">
+                            <h4><span><i class="fas fa-phone"></i></span>Téléphone</h4>
+                            <p>01 02 03 04 05</p>
+                        </div>
+            
+                        <div class="contact">
+                            <h4><span><i class="fas fa-envelope"></i></span>Email</h4>
+                            <p>contact@lartculinaire.fr</p>
+                        </div>
+    
+                        <div class="contact">
+                            <h4><span><i class="fas fa-map-marker-alt"></i></span>Adresse</h4>
+                            <p>42 rue de La Saveur</p>
+                            <p>75000 Paris</p>
+                        </div>
+                        
+                        <div class="contact">
+                            <h4><span><i class="fas fa-clock"></i></span>Horaires</h4>
+                            <p>Du lundi au vendredi : 
+                            <br>
+                            Midi : 11h - 14h
+                            <br>
+                            Soir : 19h - 22h
+                            </p>
+                            <br>
+                            <p>Le week-end :
+                            <br>
+                            Midi : 11h - 14h
+                            <br>
+                            Soir : 18h - 23h
+                            </p>
+                        </div>
                     </div>
                 </div>
     
@@ -80,7 +83,7 @@
                     <form action="/" method="GET" id="form">
                         <h3>Réservez votre table</h3>
                         
-                        <div class="date-container">
+                        <div class="form-box">
                             <label for="date">Choisissez votre jour</label>
                             <input
                                 type="date"
@@ -92,7 +95,7 @@
                             <span></span>
                         </div>
                         
-                        <div class="guests-number-container">
+                        <div class="form-box">
                             <label for="guests">Le nombre de personnes</label>
                             <input
                                 type="number"
@@ -105,11 +108,11 @@
                                 maxlength="2"
                                 required
                             >
-                            <span></span>
+                            <span class="error" id="guestsError"></span>
                         </div>
 
-                        <div class="name-container">
-                            <label for="name">Votre nom :</label>
+                        <div class="form-box">
+                            <label for="name">Votre nom</label>
                             <input
                                 type="text"
                                 id="name"
@@ -118,21 +121,22 @@
                             <span class="error" id="nameError"></span>
                         </div>
 
-                        <div class="email-container">
+                        <div class="form-box">
                             <label for="text">Votre email</label>
                             <input type="email" name="email" id="email" placeholder="Votre email" autocomplete="off">
                             <span class="error" id="emailError"></span>
                         </div>
                         
-                        <div class="phone-container">
+                        <div class="form-box">
                             <label for="text">Votre téléphone</label>
                             <input type="tel" name="phone" id="phone">
                             <span class="error" id="phoneError"></span>
                         </div>
                
-                        <button type="submit" class="booking-button">Valider</button>
-
-                        <span class="error" id="submitError"></span>
+                        <div class="form-box">
+                            <button type="submit" class="booking-button">Valider</button>
+                            <span class="error" id="submitError"></span>
+                        </div>
                      </form>
                 </div>
 
