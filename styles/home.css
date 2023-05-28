@@ -420,3 +420,9 @@ footer {
         transform-origin: 35% 50%;
     }
 }
+
+@media only screen and (max-width: 469px) {
+    .smoke-wrap {
+        transform-origin: 25% 50%;
+    }
+}
