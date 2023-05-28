@@ -22,7 +22,7 @@ function playSlideInAnimation(targetDiv) {
         activeDiv.classList.remove('active');
         activeDiv.classList.add('slide-out');
        
-        // Ajoutez cette ligne pour réinitialiser l'état des divs avant d'appliquer les animations
+        // Cette ligne réinitialise l'état des divs avant d'appliquer les animations
         activeDiv.addEventListener('animationend', () => {
             activeDiv.classList.remove('slide-out');
         }, { once: true });
@@ -45,3 +45,4 @@ desserts.addEventListener('click', () => {
 drinks.addEventListener('click', () => {
     playSlideInAnimation(menuDrinks);
 });
+  

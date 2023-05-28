@@ -86,7 +86,7 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    font-size: 1.7rem;
+    font-size: 1.5em;
     font-weight: bold;
     line-height: 5.5rem;
 }
@@ -104,7 +104,7 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    font-size: 1.7rem;
+    font-size: 1.5em;
     font-weight: bold;
     line-height: 5.5rem;
 }
@@ -198,7 +198,6 @@
     }
 
     .menu-category .details {
-        font-size: 1.5rem;
         line-height: 4rem;
     }
 
@@ -207,7 +206,6 @@
     }
 
     .menu-category .menu-drinks .details-container {
-        font-size: 1.5rem;
         line-height: 4rem;
     }
 
@@ -227,7 +225,6 @@
     }
 
     .menu-category .details {
-        font-size: 1.2rem;
         line-height: 3.5rem;
     }
 
@@ -236,7 +233,6 @@
     }
 
     .menu-category .menu-drinks .details-container {
-        font-size: 1.2rem;
         line-height: 3.5rem;
     }
 }
