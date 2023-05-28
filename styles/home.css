@@ -415,4 +415,8 @@ footer {
         width: 180px;
         font-size: 1.6rem;
     }
+
+    .smoke-wrap {
+        transform-origin: 35% 50%;
+    }
 }
